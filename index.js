@@ -1,5 +1,3 @@
-import OpenAI from 'openai';
-
 const core = require("@actions/core");
 const GitHubAPI = require("./githubapi");
 const OpenAIAPI = require("./openaiapi");
