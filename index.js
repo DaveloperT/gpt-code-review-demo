@@ -1,3 +1,5 @@
+import OpenAI from 'openai';
+
 const core = require("@actions/core");
 const GitHubAPI = require("./githubapi");
 const OpenAIAPI = require("./openaiapi");
@@ -79,7 +81,9 @@ const main = async () => {
         const filesContentGetter = (filePath) => githubAPI.getContent(owner, repo, filePath, pullRequestData.head.sha);
         const inFileCommenter = (comment, filePath, line) => githubAPI.createReviewComment(owner, repo, pullNumber, pullRequestData.head.sha, comment, filePath, line);
         const openaiApiKey = core.getInput("openai_api_key", { required: true });
-        const openaiAPI = new OpenAIAPI(openaiApiKey, filesContentGetter, inFileCommenter, getApproxMaxSymbols());
+        //const configuration = new Configuration({openaiKey: process.env.OPENAI_API_KEY})
+        //const openaiAPI = new OpenAIAPI(openaiApiKey, filesContentGetter, inFileCommenter, getApproxMaxSymbols());
+        const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
         const changedFiles = await githubAPI.listFiles(owner, repo, pullNumber);
         const fileExtensions = core.getInput("file_extensions", { required: false });
