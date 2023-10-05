@@ -13,7 +13,7 @@ public class TestApp {
         mb.makeBusiness();
     }
 
-    private static class MakeBusiness {
+    private static class MakeBusiness{
 
         private static final String STRING_TO_PRINT = "This is a demo app";
 
