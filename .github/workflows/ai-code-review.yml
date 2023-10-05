@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: AI Code Review
-      uses: AleksandrFurmenkovOfficial/ai-code-review@v0.2.2
+      uses: DaveloperT/gpt-code-review-demo@main
       with:
         token: ${{ secrets.TOKEN }} # or your token with access to PRs, read for files and write for comments
         openai_api_key: ${{ secrets.OPENAI_API_KEY }} # You should have access to gpt-4-0613
