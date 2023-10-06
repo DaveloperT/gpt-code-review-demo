@@ -8,7 +8,7 @@ public class TestApp {
         execute();
     }
 
-    private static void execute() {
+    private static void execute() throws RuntimeException {
         MakeBusiness mb = new MakeBusiness();
         mb.makeBusiness();
     }
@@ -41,5 +41,5 @@ public class TestApp {
             
             return null;
         }
-    }
+    }        
 }
