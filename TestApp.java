@@ -32,7 +32,7 @@ public class TestApp {
             try {
                 BufferedReader reader = new BufferedReader(
                     new InputStreamReader(System.in));
-                String userInput = reader.readLine();
+                String userInput = reader.readLine().trim();
                 
                 return userInput;
             } catch (IOException e) {
