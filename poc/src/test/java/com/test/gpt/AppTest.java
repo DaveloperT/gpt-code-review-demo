@@ -26,7 +26,7 @@ public class AppTest {
     }
 
     @Test
-    public void testReadUserInput() throws IOException {
+    public void testReadUserInput() throws IOException{
         // Arrange
         ByteArrayInputStream in = new ByteArrayInputStream("Test Input".getBytes());
         System.setIn(in);
