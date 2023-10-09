@@ -20,7 +20,7 @@ public class App
         
     }
 
-    public static void execute(String inputString) throws UserInputException {
+    public static void execute(String inputString) throws UserInputException{
         MakeBusiness mb = new MakeBusiness();
         mb.makeBusiness(inputString);
     }
