@@ -22,7 +22,7 @@ public class App
         
     }
 
-    private static void execute() throws UserInputException {
+    public static void execute() throws UserInputException {
         MakeBusiness mb = new MakeBusiness();
         mb.makeBusiness();
     }
