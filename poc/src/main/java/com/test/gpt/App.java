@@ -14,6 +14,7 @@ public class App
             System.out.println("Type something...");
             execute(readUserInput());
         } catch (UserInputException e) {
+            System.out.println("Errore!");
             e.printStackTrace();
         }
         
