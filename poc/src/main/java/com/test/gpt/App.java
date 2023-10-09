@@ -6,25 +6,36 @@ import java.io.InputStreamReader;
 
 import com.test.gpt.UserInputException;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     
     public static void main(String[] args) {
         try {
-            execute();
+            System.out.println("Type something...");
+            execute(readUserInput());
         } catch (UserInputException e) {
             e.printStackTrace();
         }
         
     }
 
-    public static void execute() throws UserInputException {
+    public static void execute(String inputString) throws UserInputException {
         MakeBusiness mb = new MakeBusiness();
-        mb.makeBusiness();
+        mb.makeBusiness(inputString);
     }
 
+    static String readUserInput() {
+        System.out.println("Type something...");
+        try {
+            BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in));
+            String userInput = reader.readLine();
+            
+            return userInput;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        return null;
+    }
 }
