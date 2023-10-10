@@ -4,10 +4,10 @@ on:
 
 jobs:
   hello_world_job:
+    name: ChatGPT explain code
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    name: ChatGPT explain code
     steps:
       - name: ChatGTP explain code
         uses: cirolini/chatgpt-github-actions@v1.3
