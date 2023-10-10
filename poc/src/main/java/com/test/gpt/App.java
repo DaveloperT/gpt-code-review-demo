@@ -9,15 +9,14 @@ import com.test.gpt.UserInputException;
 public class App 
 {
     
-    public static void main(String[] args) {
+    public static void main(String[] args){
         try {
             System.out.println("Type something...");
             execute(readUserInput());
         } catch (UserInputException e) {
             System.out.println("Errore!");
             e.printStackTrace();
-        }
-        
+        }        
     }
 
     public static void execute(String inputString) throws UserInputException {
