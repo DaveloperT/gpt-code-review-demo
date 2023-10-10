@@ -17,5 +17,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_pr_id: ${{ github.event.number }}
           openai_temperature: 1 #optional
-          openai_max_tokens: 2048 #optional
+          openai_max_tokens: 10000 #optional
           mode: file # file or patch
