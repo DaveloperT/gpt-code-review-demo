@@ -24,4 +24,4 @@ jobs:
           MODEL: gpt-3.5-turbo # https://platform.openai.com/docs/models
           PROMPT: # example: Please check if there are any confusions or irregularities in the following code diff:
           top_p: 0.2
-          max_tokens: 4097
+          max_tokens: 3000
