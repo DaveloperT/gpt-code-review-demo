@@ -8,7 +8,7 @@ import com.test.gpt.UserInputException;
 
 public class App {
 	private static final String ERROR_STRING = "Errore!";
-	private static final String DONT_AGREE_STRING = "I do nota agree.";
+	private static final String DONT_AGREE_STRING = "I do not agree.";
     
     public static void main(String[] args) {
         try {
