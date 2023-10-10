@@ -11,7 +11,6 @@ public class MakeBusiness {
         if(inputString.equals("error")) {
             throw new UserInputException();
         }
-
         System.out.println(STRING_TO_PRINT);
     } 
 }
