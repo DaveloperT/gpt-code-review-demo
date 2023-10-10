@@ -8,7 +8,7 @@ public class MakeBusiness {
     private static final String STRING_TO_PRINT = "I totally agree!";
 
     public void makeBusiness(String inputString) throws UserInputException {
-        if(inputString.equals("error")) {
+        if(("error").equals(inputString)) {
             throw new UserInputException();
         }
 
