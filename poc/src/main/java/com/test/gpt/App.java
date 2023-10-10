@@ -29,11 +29,11 @@ public class App {
             BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
             String userInput = reader.readLine();
+		
             return userInput;
         } catch (IOException e) {
             System.out.println("Errore inaspettato: " + e.getMessage());
-        }
-	    
+        }	    
         return ERROR_STRING;
     }
 }
