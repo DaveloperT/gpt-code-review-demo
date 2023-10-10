@@ -16,8 +16,7 @@ public class App
         } catch (UserInputException e) {
             System.out.println("Errore!");
             e.printStackTrace();
-        }
-        
+        }        
     }
 
     public static void execute(String inputString) throws UserInputException {
