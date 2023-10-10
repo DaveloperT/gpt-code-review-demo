@@ -6,15 +6,16 @@ import java.io.InputStreamReader;
 
 import com.test.gpt.UserInputException;
 
-public class App {
+public class App 
+{
+	private static final String ERROR_STRING = "Errore!";
+	private static final String DONT_AGREE_STRING = "I do nota agree.";
     
     public static void main(String[] args) {
         try {
-            System.out.println("Type something...");
             execute(readUserInput());
         } catch (UserInputException e) {
-            System.out.println("Errore!");
-            e.printStackTrace();
+            System.out.println(DONT_AGREE_STRING);
         }        
     }
 
@@ -32,9 +33,9 @@ public class App {
             
             return userInput;
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Errore inaspettato: " + e.getMessage());
         }
         
-        return null;
+        return ERROR_STRING;
     }
 }
