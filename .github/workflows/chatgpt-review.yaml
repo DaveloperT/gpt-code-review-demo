@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+      issues: write
     steps:
       - name: ChatGTP explain code
         uses: cirolini/chatgpt-github-actions@v1.3
