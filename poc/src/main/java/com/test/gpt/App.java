@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 
 import com.test.gpt.UserInputException;
 
-public class App 
-{
+public class App {
 	private static final String ERROR_STRING = "Errore!";
 	private static final String DONT_AGREE_STRING = "I do nota agree.";
     
@@ -35,7 +34,7 @@ public class App
         } catch (IOException e) {
             System.out.println("Errore inaspettato: " + e.getMessage());
         }
-        
+	    
         return ERROR_STRING;
     }
 }
